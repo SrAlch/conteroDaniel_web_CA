@@ -53,3 +53,27 @@
     border-radius: inherit;
     cursor: pointer;
 }
+
+.services-text-overlay{
+    display: none;
+    background:rgba(0, 0, 0, 0.836);
+    border-radius: inherit;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-text-overlay h4{
+    color: white;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.services-text-overlay p{
+    color: white;
+    text-align: justify;
+    margin: 0 2vw 0 2vw;
+}

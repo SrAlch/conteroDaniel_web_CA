@@ -1,0 +1,120 @@
+#heading-image{
+    background: url('../images/rooms-galway-bay-background.jpg') fixed no-repeat;
+    background-size:contain;
+    float: left;
+    width: 99vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+}
+
+#heading-image-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+#heading-image-text h2{
+    font-size: 10vh;
+    position: fixed;
+    z-index: 0;
+}
+
+#header-space{
+    width: 100%;
+}
+
+.room-container-size{
+    background: white;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.images-container{
+    background: inherit;
+    box-shadow: 0 6px 20px rgb(0, 0, 0);
+    width: 45%;
+    height: 90%;
+    margin-left: 3vw;
+    border-radius: 10px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.slide-container {
+    display:none;
+    width:auto;
+    position: absolute;
+    height: 45vh;
+}
+
+.numbertext{
+    position: absolute;
+    padding-top: 1vh;
+    margin-left: 50%;
+    font-size: 2vh;
+}
+
+#TEST_ID{
+    display:table-row;
+    
+}
+
+.slide-container-active{
+    display: flex;
+}
+
+.prev, .next {
+    cursor: pointer;
+    align-self: center;
+    width: auto;
+    border-radius: 5px;
+    color: #2b2b2b;
+    font-weight: bold;
+    font-size: 4vh;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+
+.prev{
+    margin-right: auto;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.text-container{
+    background: inherit;
+    margin-left: 3vw;
+    width: 45%;
+    height: 90%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.text-container p{
+    font-size: 3vh;
+    text-align: justify;
+}
+
+.text-container h3{
+    font-size: 5vh;
+    align-self: center;
+}
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+    <head>
+        <title>Guillian Moore | Bed and Breaksfast | Galway</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the official Guillian Moore Bed and Breaksfast on Galway's Bay where you could have the most amazing views of the atlantic ocean ">
+        <meta name=”robots” content=”index, follow”>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/home.js"></script>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="booking-general">
+                <div id="header-general">
+                    <header id="navbar">
+                        <div id="contact-information-box">
+                            <div class="contact-buttons">
+                                <span class="material-icons" id="language-button">language</span>
+                                <div class="tooltip" id="language-tooltip">
+                                    <div id="english-button-box">
+                                        <button class="language-tooltip-button" id="english-button"><a href="#0">English</a></button>
+                                    </div>
+                                    <div id="spanish-button-box">
+                                        <button class="language-tooltip-button" id="spanish-button" lang="es-ES"><a href="/es-ES/index.html">Español</a></button>
+                                    </div>
+                                </div>
+                                <small id="language-flag">Language Flag</small>
+                            </div>
+                            <div class="contact-buttons">
+                                <span class="material-icons" id="email-button">email</span>
+                                <div class="tooltip" id="email-tooltip">
+                                    <div id="email-tooltip-field-box">
+                                        <small id="hotel-email-address">
+                                            info@gmoore.com
+                                        </small>
+                                    </div>
+                                    <div id="email-tooltip-button-box">
+                                        <button id="copy-email-button">
+                                            <span class="material-icons" id="copy-email-icon">
+                                                content_copy
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-buttons">
+                                <span class="material-icons" id="phone-button">call</span>
+                                <div class="tooltip" id="phone-tooltip">
+                                    <small id="phone-tooltip-text">+353 0429740226</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="left-header-box">
+                            <a class="header-links-link" href="content/rooms/index.html">
+                                <h4 class="header-links-text">Rooms</h4>
+                            </a>
+                            <a class="header-links-link" href="content/services/index.html">
+                                <h4 class="header-links-text">Services</h4>
+                            </a>
+                        </div>
+                        <div id="center-header-box">
+                            <a class="header-links-link" href="javascript:window.location.reload(true)">
+                                <h1 class="header-homelink-text">Guillian <br> Moore B&B</h1>
+                            </a>
+                        </div>
+                        <div id="right-header-box">
+                            <a class="header-links-link" href="content/tours/index.html">
+                                <h4 class="header-links-text">Tours</h4>
+                            </a>
+                            <a class="header-links-link" href="content/about/index.html">
+                                <h4 class="header-links-text">About</h4>
+                            </a>
+                        </div>
+                        <div id="login-box">
+                            <button id="login-button">Login</button>
+                            <div id="overlay-cover-login">
+                                <div class="tooltip" id="login-tooltip">
+                                    <div id="login-close-button-box">
+                                        <button id="login-close-button">
+                                            <span class="material-icons" id="login-close-button-logo">cancel</span>
+                                        </button>
+                                    </div>
+                                    <div id="login-message-box">
+                                        <small id="login-message-text">Login Here</small>
+                                    </div>
+                                    <div class="login-input-box">
+                                        <label for="login-email" class="login-input-label">Email Address</label>
+                                        <input type="email" placeholder="Your Email Address" id="login-email" class="login-input">
+                                    </div>
+                                    <div class="login-input-box">
+                                        <label for="login-password" class="login-input-label">Password</label>
+                                        <input type="password" placeholder="Your Password" id="login-password" class="login-input">
+                                    </div>
+                                    <div class="login-overlay-button-box">
+                                        <button id="login-overlay-button">Login</button>
+                                        <div id="login-unregistered-box">
+                                            <button id="login-close-unregistered">
+                                                <span class="material-icons" id="login-close-unregistered-logo">cancel</span>
+                                            </button>
+                                            <small id="login-unregistered-text">The email that has been entered is not in our database, please check that it is correct</small>
+                                        </div>
+                                    </div>
+                                    <div class="login-overlay-button-box">
+                                        <a href="./content/underConstruction.html" class="login-aux-link">Register now</a> 
+                                        &nbsp;/&nbsp;
+                                        <a href="content/underConstruction.html" class="login-aux-link">Forgot Password</a>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div id="booking-button-box">
+                    <div id="center-booking-button-box">
+                        <div id="dates-trip-box">
+                            <div id="arrival-box">
+                                <label for="arrivalDate" class="booking-formating-text"> Date of Arrival</label>
+                                <input type="date" name="arrivalDate" id="date-of-arrival"/>
+                            </div>
+                            <div id="departure-box">
+                                <label for="departureDate" class="booking-formating-text"> Date of Departure</label>
+                                <input type="date" name="departureDate" id="date-of-departure">
+                            </div>
+                        </div>
+                        <div id="guest-count-box">
+                            <div class="count-box">
+                                <label for="adultCount" class="booking-formating-text">Adults</label>
+                                <div class="count-buttons-box">
+                                    <div class="count-button" id="adult-count-minus-button">
+                                        <label for="minusButton" class="plus-minus-button" id="adult-minus-button">-</label>
+                                    </div>
+                                    <div class="number-box">
+                                        <span id="adult-count-number">2</span>
+                                    </div>
+                                    <div class="count-button" id="adult-count-plus-button">
+                                        <label for="plusButton" class="plus-minus-button" id="adult-plus-button">+</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="count-box">
+                                <label for="childrenCount" class="booking-formating-text">Childrens</label>
+                                <div class="count-buttons-box">
+                                    <div class="count-button" id="children-count-minus-button">
+                                        <label for="minusButton" class="plus-minus-button" id="children-minus-button">-</label>
+                                    </div>
+                                    <div class="number-box">
+                                        <span id="children-count-number">0</span>
+                                    </div>
+                                    <div class="count-button" id="children-count-plus-button">
+                                        <label for="plusButton" class="plus-minus-button" id="children-plus-button">+</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="search-button-box">
+                            <div id="search-button-box-centered">
+                                <button id="button-search">Find your Bed!</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="introduction-general">
+                <h2 id="introduction-title">The Capital of the West</h2>
+                <div id="introduction-text-box">
+                    <p class="introduction-text-format">Six started far placing saw respect females old. Civilly why how end viewing attempt related enquire visitor. Man particular insensible celebrated conviction stimulated principles day. Sure fail or in said west. Right my front it wound cause fully am sorry if. She jointure goodness interest debating did outweigh. Is time from them full my gone in went. Of no introduced am literature excellence mr stimulated contrasted increasing. Age sold some full like rich new. Amounted repeated as believed in confined juvenile.</p>
+                </div>
+                <div id="introduction-image-box">
+                    <div id="introduction-image">
+                        <img src="./assets/images/introduction-galway-city.jpg" alt="Panoramic view from a drone of the city of Galway, Ireland">
+                    </div>
+                </div>
+            </div>
+            <div id="awards-general">
+                <div id="awards-title">
+                    <h2>Our Pride</h2>
+                </div>
+                <div id="awards-content">
+                    <div class="awards-content-box">
+                        <p>Six started far placing saw respect females old. Civilly why how end viewing attempt related enquire visitor. Man particular insensible celebrated conviction stimulated principles day. Sure fail or in said west. Right my front it wound cause fully am sorry if</p>
+                    </div>
+                    <div class="awards-content-box">
+                        <div class="awards-seals">
+                            <img src="./assets/images/tripadvisor-certificate-2018-637x637.jpg" alt="">
+                        </div>
+                        <div  class="awards-seals">
+                            <img src="./assets/images/tripadvisor-certificate-2019-637x478.png" alt="">
+                        </div>
+                    </div>
+                    <div class="awards-content-box">
+                        <p>Six started far placing saw respect females old. Civilly why how end viewing attempt related enquire visitor. Man particular insensible celebrated conviction stimulated principles day. Sure fail or in said west. Right my front it wound cause fully am sorry if</p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-general">
+                <footer>&copy; 2021</footer>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+#heading-image{
+    background: url('../images/about-team-background.jpg') no-repeat;
+    background-position: top center;
+    background-size:cover;
+    float: left;
+    width: 99vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+}
+
+#heading-image-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading-image-text h2{
+    font-size: 10vh;
+}
+
+#header-space{
+    width: 100%;
+}
+
+.main-container{
+    float: left;
+    background: red;
+    width: 99vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-info-split-box{
+    background: yellowgreen;
+    width: 49vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-side-thirds{
+    background: blue;
+    border-radius: 12px;
+    width: 40vw;
+    box-shadow: 0 6px 20px rgb(0, 0, 0);
+}
+
+#mission-text-box, #contact-text-box{
+    height: 30vh;
+}
+
+#map-container{
+    height: 60vh;
+}
+
+#contact-form-box{
+    height: 100vh;
+}
+
+#opinion-carrussel{
+    height: 30vh;
+}

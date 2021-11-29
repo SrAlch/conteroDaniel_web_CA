@@ -29,7 +29,6 @@
 
 .main-container{
     float: left;
-    background: red;
     width: 99vw;
     height: 150vh;
     display: flex;
@@ -38,7 +37,6 @@
 }
 
 .about-info-split-box{
-    background: yellowgreen;
     width: 49vw;
     height: inherit;
     display: flex;
@@ -47,8 +45,7 @@
     align-items: center;
 }
 
-.left-side-thirds{
-    background: blue;
+.side-thirds{
     border-radius: 12px;
     width: 40vw;
     box-shadow: 0 6px 20px rgb(0, 0, 0);
@@ -56,6 +53,14 @@
 
 #mission-text-box, #contact-text-box{
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-text-box small{
+    font-size: 2vh;
+    align-self: flex-start;
+    margin: 4vh 0 0 2vw;
 }
 
 #map-container{

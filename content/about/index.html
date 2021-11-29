@@ -6,9 +6,9 @@
         <meta name=”robots” content=”index, follow”>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
-        <script src="./js/main.js" defer></script>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/about.css">
+        <script src="../../js/main.js" defer></script>
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/about.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
@@ -22,7 +22,7 @@
                                     <span class="material-icons" id="language-button">language</span>
                                     <div class="tooltip" id="language-tooltip">
                                         <div id="english-button-box">
-                                            <button class="language-tooltip-button" id="english-button"><a href="#0">English</a></button>
+                                            <button class="language-tooltip-button" id="english-button"><a href="javascript:window.location.reload(true)">English</a></button>
                                         </div>
                                         <div id="spanish-button-box">
                                             <button class="language-tooltip-button" id="spanish-button" lang="es-ES"><a href="/es-ES/index.html">Español</a></button>
@@ -68,10 +68,10 @@
                                 </a>
                             </div>
                             <div id="right-header-box">
-                                <a class="header-links-link" href="javascript:window.location.reload(true)">
+                                <a class="header-links-link" href="../tours/index.html">
                                     <h4 class="header-links-text">Tours</h4>
                                 </a>
-                                <a class="header-links-link" href="../about/index.html">
+                                <a class="header-links-link" href="javascript:window.location.reload(true)">
                                     <h4 class="header-links-text">About</h4>
                                 </a>
                             </div>
@@ -105,9 +105,9 @@
                                             </div>
                                         </div>
                                         <div class="login-overlay-button-box">
-                                            <a href="./content/underConstruction.html" class="login-aux-link">Register now</a> 
+                                            <a href="../underConstruction.html" class="login-aux-link">Register now</a> 
                                             &nbsp;/&nbsp;
-                                            <a href="content/underConstruction.html" class="login-aux-link">Forgot Password</a>
+                                            <a href="../underConstruction.html" class="login-aux-link">Forgot Password</a>
                                         </div>
                                     </div>   
                                 </div>
@@ -121,16 +121,31 @@
             </div>
             <div class="main-container">
                 <div class="about-info-split-box">
-                    <div class="left-side-thirds" id="mission-text-box">
+                    <div class="side-thirds" id="mission-text-box">
                         <h4>Our Mission</h4>
                         <p>Bed sincerity yet therefore forfeited his certainty neglected questions. Pursuit chamber as elderly amongst on. Distant however warrant farther to of. My justice wishing prudent waiting in be. Comparison age not pianoforte increasing delightful now. Insipidity sufficient dispatched any reasonably led ask. Announcing if attachment resolution sentiments admiration me on diminution.</p>
                     </div>
-                    <div class="left-side-thirds" id="map-container"></div>
-                    <div class="left-side-thirds" id="contact-text-box"></div>
+                    <div class="side-thirds" id="map-container">
+                        <!-- Google Maps will appear with an overlay as require to activate the billing for the full version -->
+                    </div>
+                    <div class="side-thirds" id="contact-text-box">
+                        <small>line asdasdasdasd</small>
+                        <small>line asdasdasdasd</small>
+                        <small>line asdasdasdasd</small>
+                        <small>line asdasdasdasd</small>
+                    </div>
                 </div>
                 <div class="about-info-split-box">
-                    <div class="left-side-thirds" id="contact-form-box"></div>
-                    <div class="left-side-thirds" id="opinion-carrussel"></div>
+                    <div class="side-thirds" id="contact-form-box"></div>
+                    <div class="side-thirds" id="opinion-carrussel"></div>
                 </div>
 
             </div>
+        </div>
+        <script src="../../js/about.js" defer></script>
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNQibRwAyOpupKNmSmHAvQqHPB4ESb4n8&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    </body>
+</html>

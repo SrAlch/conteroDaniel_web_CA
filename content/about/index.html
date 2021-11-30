@@ -129,23 +129,50 @@
                         <!-- Google Maps will appear with an overlay as require to activate the billing for the full version -->
                     </div>
                     <div class="side-thirds" id="contact-text-box">
-                        <small>line asdasdasdasd</small>
-                        <small>line asdasdasdasd</small>
-                        <small>line asdasdasdasd</small>
-                        <small>line asdasdasdasd</small>
+                        <small>Ballyloughane Caravan and Camping Park</small>
+                        <small>Renmore, Galway</small>
+                        <small>H91 YH59 | Ireland</small>
+                        <small>+353 0429740226 | info@gmoore.com</small>
                     </div>
                 </div>
                 <div class="about-info-split-box">
-                    <div class="side-thirds" id="contact-form-box"></div>
+                    <div class="side-thirds" id="contact-form-box">
+                        <p>Ten the hastened steepest feelings pleasant few surprise property. An brother he do colonel against minutes uncivil. Can how elinor warmly mrs basket marked. Led raising expense yet demesne weather musical. Me mr what park next busy ever. Elinor her his secure far twenty eat object. Late any far saw size want man. Which way you wrong add shall one. As guest right of he scale these. Horses nearer oh elinor of denote</p>
+                        <div class="about-input-container">
+                            <div class="about-input-labels">
+                                <label for="first-name">First Name</label>
+                                <label for="last-name">Last Name</label>
+                                <label for="email-address">Email Address</label>
+                                <label for="phone-number">Phone Number</label>
+                                
+                            </div>
+                            <div class="about-input-inputs">
+                                <input type="text" name="first-name" id="first-name">
+                                <input type="text" name="last-name" id="last-name">
+                                <input type="text" name="email-address" id="email-address">
+                                <input type="text" name="phone-number" id="phone-number" placeholder="(Optional)">
+                            </div>
+                        </div>
+                        
+                        <Label id="your-message">Your message:</Label>
+                        
+                        <textarea name="yourMessage" id="your-message-textarea" cols="30" rows="10" maxlength="500" onkeyup="countChar(this)" placeholder="Tell us what we can do for you..."></textarea>
+                        <small id="char-number">500</small>
+                        <div class="terms-checkers">
+                            <input type="checkbox" name="terms-conditions" id="terms-conditions">
+                            <label for="terms-conditions">I agree wit the <a href="../termsAndConditions.html" target="_blank" rel="noopener noreferrer">Terms and Conditions.</a></label>
+                            <input type="checkbox" name="letterbox-suscribe" id="letterbox-suscribe">
+                            <label for="letterbox-suscribe">I will like to recieve news from Gillian Moore B&B</label>
+                        </div>
+                        <div id="submit-button">
+                            <input type="submit" id="submit-information"></input> 
+                        </div>
+                    </div>
                     <div class="side-thirds" id="opinion-carrussel"></div>
                 </div>
-
             </div>
         </div>
         <script src="../../js/about.js" defer></script>
-        <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNQibRwAyOpupKNmSmHAvQqHPB4ESb4n8&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNQibRwAyOpupKNmSmHAvQqHPB4ESb4n8&callback=initMap&libraries=&v=weekly" async></script>
     </body>
 </html>

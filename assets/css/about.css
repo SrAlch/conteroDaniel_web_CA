@@ -57,10 +57,21 @@
     flex-direction: column;
 }
 
+#mission-text-box h4{
+    text-align: center;
+    font-size: calc(1.5rem + 1.5vw);
+    margin: 2vh 0 2vh 0;
+}
+
+#mission-text-box p{
+    text-align: justify;
+    margin: 0 3vw 0 3vw;
+}
+
 #contact-text-box small{
     font-size: 2vh;
     align-self: flex-start;
-    margin: 4vh 0 0 2vw;
+    margin: 4vh 0 0 3vw;
 }
 
 #map-container{
@@ -69,6 +80,91 @@
 
 #contact-form-box{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#contact-form-box p{
+    height: 12vh;
+    margin: 8vh 3vw 3vh 3vw;
+    padding: 0;
+}
+
+.about-input-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-input-labels{
+
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 0 0 3vw;
+}
+
+.about-input-labels label{
+    margin-top: 1.5vh;
+}
+
+.about-input-inputs{
+    width: 50%;
+}
+
+.about-input-inputs input{
+    margin-top: 1vh;
+}
+
+#your-message{
+    margin: 8vh 0 0 3vw;
+}
+
+#your-message-textarea{
+    margin: 1.5vh 3vw 0 3vw;
+    resize: none;
+}
+
+#char-number{
+    text-align: right;
+    margin: 0 3vw 0 0;
+}
+
+.terms-checkers{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.terms-checkers a{
+    color: blue;
+}
+
+.terms-checkers label{
+    margin: 0 3vw 0 0;
+}
+
+.terms-checkers input{
+    width: auto;
+    height: auto;
+    margin: 0 1vw 0 3vw;
+    cursor: pointer;
+}
+
+#submit-button{
+    display: flex;
+    justify-content: center;
+    margin-top:8vh ;
+    
+}
+
+#submit-button input{
+    width: 35%;
+    height: 5vh;
+    background: #2b2b2b;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 #opinion-carrussel{

@@ -1,4 +1,5 @@
 *{margin: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
 
 a{
     text-decoration: none;
@@ -21,6 +22,12 @@ a{
 
 #language-button{
     color: #2b2b2b;
+}
+
+#language-flag{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
 }
 
 #english-button-box{
@@ -70,7 +77,9 @@ a{
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
     color: rgb(216, 216, 216);
     cursor: default;
 }
@@ -118,7 +127,9 @@ a{
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
     color: rgb(216, 216, 216);
     cursor: default;
 }
@@ -186,8 +197,11 @@ a{
 }
 
 #login-message-text{
-    font-size: 6vh;
     color: #2b2b2b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    cursor: default;
 }
 
 .login-input-box{
@@ -213,13 +227,17 @@ a{
 .login-input-label{
     color: #2b2b2b;
     text-decoration: none;
-    font-size: 2.3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 0.8vw;
 }
 
 .login-input{
     width: 15vw;
     height: 3vh;
-    font-size: 1.7vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.8;
 }
 
 #login-overlay-button{
@@ -229,7 +247,9 @@ a{
     border-radius: 9px;
     background: #2b2b2b;
     color: white;
-    font-size: 2.5vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 1.4vw;
     cursor: pointer;
 }
 
@@ -250,6 +270,9 @@ a{
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
 }
 
 #login-close-unregistered{
@@ -273,7 +296,9 @@ a{
 .login-aux-link{
     color: #2b2b2b;
     text-decoration: none;
-    font-size: 1.5vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 0.6vw;
 }
 
 /*Page Style*/
@@ -323,6 +348,9 @@ img{
     height: 100%;
     color: #2b2b2b;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
 }
 
 .header-links-text:hover{
@@ -345,7 +373,9 @@ img{
     height: 5vh;
     margin: 0 auto;
     text-decoration: none;
-    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
 }
 
 .header-homelink-text:hover{
@@ -448,6 +478,9 @@ header{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
 }
 
 #booking-button-box{
@@ -492,6 +525,9 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
 }
 
 #arrival-box{
@@ -506,6 +542,9 @@ input {
     margin-top: 5%;
     width: 60%;
     cursor: text;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.7vw;
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -524,6 +563,9 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 5%;
     width: 60%;
     cursor: text;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.7vw;
 }
 
 #guest-count-box{
@@ -568,18 +610,14 @@ input::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
-#adult-count-number{
+#adult-count-number, #children-count-number{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30%;
-}
-
-#children-count-number{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.8vw;
 }
 
 #search-button-box{
@@ -604,8 +642,10 @@ input::-webkit-calendar-picker-indicator {
     color: white;
     padding: 15px 20px;
     text-align: center;
-    font-size: 16px;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
 }
 
 #booking-general{
@@ -631,7 +671,10 @@ input::-webkit-calendar-picker-indicator {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 300%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    cursor: default;
 }
 
 #introduction-text-box{
@@ -639,12 +682,16 @@ input::-webkit-calendar-picker-indicator {
     background: inherit;
     width: 50%;
     height: 65%;
+    margin-top: 6vh ;
 }
 
 .introduction-text-format{
-    margin: 5%;
+    margin: 5vh 0 0 4vw;
     text-align: justify;
-    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+    cursor: default;
 }
 
 #introduction-image-box{
@@ -670,55 +717,61 @@ input::-webkit-calendar-picker-indicator {
 
 #awards-general{
     float: left;
-    width: 100%;
-    height: 95vh;
+    width: 99vw;
+    height: 70vh;
     min-height:30px;
 }
 
 #awards-title{
-    width: 100%;
+    width: 99vw;
     height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: default;
 }
 
 #awards-title h2{
     align-self: center;
-    font-size: 4.5vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
 }
 
 #awards-content{
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 87vh;
-    width: 100%;
+    height: 60vh;
+    width: 99vw;
 }
 
 .awards-content-box{
-    width: 30%;
-    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 30vw;
+    height: 40vh;
 }
 
 .awards-content-box p{
-    font-size: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
     text-align: justify;
     display: flex;
-    
 }
 
 .awards-seals{
+    width: 30vw;
+    height: 30vh;
     display: flex;
-    background: white;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 50%;
+}
+
+.awards-seals img{
+    object-fit: cover;
 }
 
 #footer-general{

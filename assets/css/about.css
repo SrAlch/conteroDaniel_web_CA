@@ -132,6 +132,7 @@
     font-weight: 100;
     font-size: 0.8vw;
     margin-top: 1vh;
+    border: red solid 1px;
 }
 
 #your-message{
@@ -201,6 +202,14 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.error-text-submit{
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.6vw;
+    color: red;
 }
 
 #opinion-carrussel{

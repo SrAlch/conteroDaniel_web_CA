@@ -19,4 +19,40 @@ function countChar(val) {
     } else {
       $('#char-number').text(500 - len);
     }
-  };
+};
+
+$("#submit-information").click(
+  function () {
+    let first_name = $("#first-name").val();    
+    let last_name = $("#last-name").val(); 
+    let email_address = $("#email-address").val(); 
+    let phone_number = $("#phone-number").val(); 
+    let message = $("#your-message-textarea").val(); 
+    let terms_conditions = $("#terms-conditions").val(); 
+    let news_suscription = $("#letterbox-suscribe").val();
+
+    let all_checks = 0;
+    var regX_email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    var regX_name = /^[A-Za-z]+$/;
+
+
+    if (regX_name.test(first_name)){
+      all_checks = 1
+    }else{
+      all_checks = 0
+      $("#error-first-name").toggle();
+    }
+    if (regX_name.test(last_name)){
+      all_checks = 1
+    }else{
+      all_checks = 0
+      $("#error-first-name").toggle();
+    }
+    
+    if (regX_email.test(email_address)){
+
+    }else{
+      
+    }
+  
+});

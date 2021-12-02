@@ -148,8 +148,11 @@
                             </div>
                             <div class="about-input-inputs">
                                 <input type="text" name="first-name" id="first-name">
+                                <small class="error-text-submit" id="error-first-name">First Name Needed!</small>
                                 <input type="text" name="last-name" id="last-name">
+                                <small class="error-text-submit">Last Name Needed!</small>
                                 <input type="text" name="email-address" id="email-address">
+                                <small class="error-text-submit">Email Address Needed!</small>
                                 <input type="text" name="phone-number" id="phone-number" placeholder="(Optional)">
                             </div>
                         </div>
@@ -160,7 +163,8 @@
                         <small id="char-number">500</small>
                         <div class="terms-checkers">
                             <input type="checkbox" name="terms-conditions" id="terms-conditions">
-                            <label for="terms-conditions">I agree wit the <a href="../termsAndConditions.html" target="_blank" rel="noopener noreferrer">Terms and Conditions.</a></label>
+                            <small class="error-text-submit">You need to accept the terms and coditions</small>
+                            <label for="terms-conditions">I agree with the <a href="../termsAndConditions.html" target="_blank" rel="noopener noreferrer">Terms and Conditions.</a></label>
                             <input type="checkbox" name="letterbox-suscribe" id="letterbox-suscribe">
                             <label for="letterbox-suscribe">I will like to recieve news from Gillian Moore B&B</label>
                         </div>
@@ -208,7 +212,7 @@
                 </div>
             </footer>
         </div>
-        <script src="../../js/about.js" defer></script>
+        <script src="../../js/about.js" async></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNQibRwAyOpupKNmSmHAvQqHPB4ESb4n8&callback=initMap&libraries=&v=weekly" async></script>
     </body>
 </html>

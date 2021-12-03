@@ -46,13 +46,14 @@ $("#submit-information").click(
       all_checks = 1
     }else{
       all_checks = 0
-      $("#error-first-name").toggle();
+      $("#error-last-name").toggle();
     }
     
     if (regX_email.test(email_address)){
-
+      all_checks = 1
     }else{
-      
+      all_checks = 0
+      $("#error-email-address").toggle();
     }
   
 });

@@ -123,7 +123,7 @@
                 <div class="about-info-split-box">
                     <div class="side-thirds" id="mission-text-box">
                         <h4>Our Mission</h4>
-                        <p>Bed sincerity yet therefore forfeited his certainty neglected questions. Pursuit chamber as elderly amongst on. Distant however warrant farther to of. My justice wishing prudent waiting in be. Comparison age not pianoforte increasing delightful now. Insipidity sufficient dispatched any reasonably led ask. Announcing if attachment resolution sentiments admiration me on diminution.</p>
+                        <p>As a family owned business is our mission to offer a close and wholesome service to our clients, that in some cases we have become to see as part of our very own family. We love to always learn what can we offer new and focus on the local tourism that our beautiful city can offer.</p>
                     </div>
                     <div class="side-thirds" id="map-container">
                         <!-- Google Maps will appear with an overlay as require to activate the billing for the full version -->
@@ -137,22 +137,25 @@
                 </div>
                 <div class="about-info-split-box">
                     <div class="side-thirds" id="contact-form-box">
-                        <p>Ten the hastened steepest feelings pleasant few surprise property. An brother he do colonel against minutes uncivil. Can how elinor warmly mrs basket marked. Led raising expense yet demesne weather musical. Me mr what park next busy ever. Elinor her his secure far twenty eat object. Late any far saw size want man. Which way you wrong add shall one. As guest right of he scale these. Horses nearer oh elinor of denote</p>
+                        <p>We try to put all the care and time in inform you about everything we do, but sometimes we can not thing of everything! If there is anything we can do for you please just let us know through the following form and we will get to you as soon as possible.</p>
                         <div class="about-input-container">
                             <div class="about-input-labels">
                                 <label for="first-name">First Name</label>
-                                <label for="last-name">Last Name</label>
-                                <label for="email-address">Email Address</label>
-                                <label for="phone-number">Phone Number</label>
-                                
-                            </div>
-                            <div class="about-input-inputs">
                                 <input type="text" name="first-name" id="first-name">
                                 <small class="error-text-submit" id="error-first-name">First Name Needed!</small>
+                            </div>
+                            <div class="about-input-labels">
+                                <label for="last-name">Last Name</label>
                                 <input type="text" name="last-name" id="last-name">
                                 <small class="error-text-submit" id="error-last-name">Last Name Needed!</small>
+                            </div>
+                            <div class="about-input-labels">
+                                <label for="email-address">Email Address</label>
                                 <input type="text" name="email-address" id="email-address">
                                 <small class="error-text-submit" id="error-email-address">Email Address Needed!</small>
+                            </div>
+                            <div class="about-input-labels">
+                                <label for="phone-number">Phone Number</label>
                                 <input type="text" name="phone-number" id="phone-number" placeholder="(Optional)">
                             </div>
                         </div>
@@ -163,7 +166,7 @@
                         <small id="char-number">500</small>
                         <div class="terms-checkers">
                             <input type="checkbox" name="terms-conditions" id="terms-conditions">
-                            <small class="error-text-submit">You need to accept the terms and coditions</small>
+                            <small class="error-text-submit" id="error-terms-conditions">You need to accept the terms and coditions</small>
                             <label for="terms-conditions">I agree with the <a href="../termsAndConditions.html" target="_blank" rel="noopener noreferrer">Terms and Conditions.</a></label>
                             <input type="checkbox" name="letterbox-suscribe" id="letterbox-suscribe">
                             <label for="letterbox-suscribe">I will like to recieve news from Gillian Moore B&B</label>
@@ -172,7 +175,32 @@
                             <input type="submit" id="submit-information"></input> 
                         </div>
                     </div>
-                    <div class="side-thirds" id="opinion-carrussel"></div>
+                    <div class="side-thirds" id="opinion-carrussel">
+                        <div class="review-container">
+                            <div class="review-image">
+                                <img src="../../assets/images/about-review/review_first.jpg" alt="">
+                            </div>
+                            <div class="review-text">
+                                <p>Smallest directly families surprise honoured am an. Speaking replying mistress him numerous she returned feelings may day. Evening way luckily son exposed get general greatly. Zealously prevailed be arranging do. Set arranging too dejection september happiness. Understood instrument or do connection no appearance do invitation. Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry plate you share. My resolve arrived is we chamber be removal.</p>
+                            </div>
+                        </div>
+                        <div class="review-container">
+                            <div class="review-image">
+                                <img src="../../assets/images/about-review/review_second.jpg" alt="">
+                            </div>
+                            <div class="review-text">
+                                <p>Smallest directly families surprise honoured am an. Speaking replying mistress him numerous she returned feelings may day. Evening way luckily son exposed get general greatly. Zealously prevailed be arranging do. Set arranging too dejection september happiness. Understood instrument or do connection no appearance do invitation. Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry plate you share. My resolve arrived is we chamber be removal.</p>
+                            </div>
+                        </div>
+                        <div class="review-container">
+                            <div class="review-image">
+                                <img src="../../assets/images/about-review/review_third.jpg" alt="">
+                            </div>
+                            <div class="review-text">
+                                <p>Smallest directly families surprise honoured am an. Speaking replying mistress him numerous she returned feelings may day. Evening way luckily son exposed get general greatly. Zealously prevailed be arranging do. Set arranging too dejection september happiness. Understood instrument or do connection no appearance do invitation. Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry plate you share. My resolve arrived is we chamber be removal.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <footer id="footer-general">
@@ -212,7 +240,8 @@
                 </div>
             </footer>
         </div>
-        <script src="../../js/about.js" async></script>
+        
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNQibRwAyOpupKNmSmHAvQqHPB4ESb4n8&callback=initMap&libraries=&v=weekly" async></script>
+        <script src="../../js/about.js"  defer></script>
     </body>
 </html>

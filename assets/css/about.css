@@ -23,6 +23,11 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 6vw;
+    color: #2b2b2b;
+    background: rgba(255, 255, 255, 0.61);
+    border-radius: 10px;
+    border: solid #2b2b2b 2px;
+    padding: 0 1vw;
 }
 
 #header-space{
@@ -105,35 +110,32 @@
 
 .about-input-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-input-labels{
-
+    width: 30vw;
+    height: 3.5vh;
+    margin-top: 2vh;
     display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin: 0 0 0 3vw;
+    align-items: center;
+
+}
+
+.about-input-labels input{
+    margin: 0 2vw 0 2vw ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.7vw;
 }
 
 .about-input-labels label{
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 0.85vw;
-    margin-top: 1.5vh;
 }
 
-.about-input-inputs{
-    width: 50%;
-}
-
-.about-input-inputs input{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 0.8vw;
-    margin-top: 1vh;
-    border: red solid 1px;
-}
 
 #your-message{
     font-family: 'Montserrat', sans-serif;
@@ -147,6 +149,7 @@
     font-weight: 100;
     font-size: 0.85vw;
     margin: 1.5vh 3vw 0 3vw;
+    height: 18vh;
     resize: none;
 }
 
@@ -214,4 +217,46 @@
 
 #opinion-carrussel{
     height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-container{
+    display: flex;
+    height: 29vh;
+    width: 39vw;
+    border-radius: 10px;
+}
+
+.review-image{
+    align-self: center;
+    height: 25vh;
+    width: 30%;
+    display: flex;
+    margin-left: 2vw;
+}
+
+.review-image img{
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+    border: solid #2b2b2b 3px;
+    height: inherit;
+}
+
+.review-text{
+    align-self: center;
+    height: 25vh;
+    width: 70%;
+}
+
+.review-text p{
+    text-align: justify;
+    margin: 3vh 2vw 0 2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 0.73vw;
 }

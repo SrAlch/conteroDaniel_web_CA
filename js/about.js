@@ -37,20 +37,19 @@ $(document).ready(function(){
       var regX_email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})+$/;
       var regX_name = /^[A-Za-z]+$/;
 
-      console.log(terms_conditions);
-
       if (regX_name.test(first_name)){
         all_checks = 1;
       }else{
         all_checks = 0;
         $("#error-first-name").show();
-        $(".about-input-inputs :input").css("border", "red");
+        $("#first-name").css("border-color", "red");
       }
       if (regX_name.test(last_name)){
         all_checks = 1;
       }else{
         all_checks = 0;
         $("#error-last-name").show();
+        $("#last-name").css("border-color", "red");
       }
       
       if (regX_email.test(email_address)){
@@ -58,15 +57,41 @@ $(document).ready(function(){
       }else{
         all_checks = 0;
         $("#error-email-address").show();
+        $("#email-address").css("border-color", "red");
       }
       
       if (terms_conditions){
-        console.log("le true")
+        all_checks = 1;
       }else{
         all_checks = 0;
         $("#error-terms-conditions").show();
       }
   });
+
+  $("#first-name").click(
+    function () { 
+      $("#error-first-name").hide();
+      $("#first-name").css("border-color", "black");
+  });
+
+  $("#last-name").click(
+    function () { 
+      $("#error-last-name").hide();
+      $("#last-name").css("border-color", "black");
+  });
+
+  $("#email-address").click(
+    function () { 
+      $("#error-email-address").hide();
+      $("#email-address").css("border-color", "black");
+  });
+
+  $("#terms-conditions").click(
+    function () { 
+      $("#error-terms-conditions").hide();
+  });
+
+
 
   $("#opinion-carrussel > div:gt(0)").hide();
 
@@ -78,5 +103,5 @@ $(document).ready(function(){
     .fadeIn(1000)
     .end()
     .appendTo('#opinion-carrussel');
-  }, 5000);
+  }, 10000);
 });

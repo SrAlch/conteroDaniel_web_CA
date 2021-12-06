@@ -2,8 +2,8 @@ $(document).ready(function(){
 
     var SLIDE_POSITION = 0
 
-    function showRoomPhoto(room_name, increment){
-        let selection = $("#"+ room_name).find(".slide-container");
+    function showRoomPhoto(class_name, room_name, increment){
+        let selection = $(class_name + "#"+ room_name).find(".slide-container");
         let size = selection.length;
         let growth = SLIDE_POSITION + increment;
         
@@ -24,24 +24,22 @@ $(document).ready(function(){
         image_show.css("display", "table-row")
     };
 
-
-    function getAllIds() {
+    function getAllIds(class_name) {
         let n = 0;
-        let array_length = $(".room-container-size").length;
+        let array_length = $(class_name).length;
         var id_array = [];
         while (n<array_length) {
-            let id = $(".room-container-size").eq(n).attr("id");
+            let id = $(class_name).eq(n).attr("id");
             n++
             id_array.push(id)
         };
         return id_array;
     };
     
-
-    function carrouselSetUp() {
-        id_array = getAllIds();
+    function carrouselSetUp(class_name) {
+        id_array = getAllIds(class_name);
         id_array.forEach(id => {
-            showRoomPhoto(id, 0);
+            showRoomPhoto(class_name, id, 0);
 
             $("#" + id  + " .prev").click(function() {
                 showRoomPhoto(id, -1);
@@ -53,7 +51,22 @@ $(document).ready(function(){
         });
     };
 
-    carrouselSetUp();
+
+    function getClassBySize() {
+        let class_name = ""
+        if (window.matchMedia('(min-aspect-ratio: 1/1)').matches) {
+            class_name = ".room-container-size";
+        } else {
+            class_name = ".room-container-size-mobile";
+        }
+        carrouselSetUp(class_name);
+    };
+
+    getClassBySize();
+
+    $(window).resize(function() {
+        getClassBySize();
+    });
 
 });
 

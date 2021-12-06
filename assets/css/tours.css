@@ -96,3 +96,103 @@
     }
 
 }
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+    #heading-image{
+        background: url('../images/cliffs-of-moher-tours-bg.jfif') no-repeat;
+        background-position: top center;
+        background-size: cover;
+        float: left;
+        width: 99vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start ;
+    }
+
+    #heading-image-text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #heading-image-text h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 6vw;
+        color: #2b2b2b;
+        background: rgba(255, 255, 255, 0.61);
+        border-radius: 10px;
+        border: solid #2b2b2b 2px;
+        padding: 0 1vw;
+    }
+
+    #header-space{
+        width: 100%;
+    }
+
+    .room-container-size{
+        float: left;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images-container{
+        background: rgb(255, 255, 255);
+        box-shadow: 0 6px 20px rgb(0, 0, 0);
+        width: 90vw;
+        height: 40vh;
+        margin-top: 2vh;
+        border-radius: 10px;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .images-container a{
+        align-self: center;
+        border-radius: inherit;
+    }
+
+    .images-container img{
+        width: 89vw;
+        height: 20vh;
+        object-fit: cover;
+        align-self: center;
+        border-radius: inherit;
+        cursor: pointer;
+    }
+
+    .text-container{
+        margin-top: 4vh;
+        width: 89vw;
+        height: 90%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        flex-direction: column;
+    }
+
+    .text-container p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: calc(8px + 0.7vw);
+        text-align: justify;
+    }
+
+    .text-container h3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 3vw;
+        align-self: center;
+        margin-bottom: 3vh;
+    }
+
+}

@@ -14,7 +14,7 @@ a{
 #wrapper{
     margin-left:auto;
     margin-right:auto;
-    width:99vw;
+    width:100%;
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
@@ -396,7 +396,7 @@ a{
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: calc(4px + 0.8vw);
+        font-size: calc(4px + 0.7vw);
     }
 
     .header-homelink-text:hover{
@@ -475,6 +475,7 @@ a{
         box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
         width: 70vw;
         height: 15vh;
+        min-height: 120px;
         margin: 0 auto;
         margin-top: 67vh;
         position: relative;
@@ -619,15 +620,15 @@ a{
         border: none;
         border-radius: 10px;
         color: white;
-        width: 8vw;
-        min-width: 90px;
+        width: 9vw;
+        min-width: 100px;
         height: 5vh;
         max-height: 45px;
         text-align: center;
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: calc(10px + 0.4vw);
+        font-size: calc(8px + 0.4vw);
     }
 
     #booking-general{

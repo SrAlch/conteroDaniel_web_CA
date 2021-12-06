@@ -24,7 +24,7 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 5vw;
-        position: fixed;
+
         z-index: 0;
         color: #2b2b2b;
         background: rgba(255, 255, 255, 0.61);
@@ -46,6 +46,7 @@
         display: flex;
         align-items: center;
         z-index: 1;
+        margin: 2vh 0;
     }
 
     .room-container-size-mobile{
@@ -133,7 +134,7 @@
     .text-container p{
         font-family: 'Montserrat', sans-serif;
         font-weight: 100;
-        font-size: calc(10px + 0.7vw);
+        font-size: calc(7px + 0.7vw);
         text-align: justify;
         margin-top: 2vh;
     }
@@ -141,7 +142,7 @@
     .text-container h3{
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 3vw;
+        font-size: calc(7px + 2.5vw);
         align-self: center;
     }
 

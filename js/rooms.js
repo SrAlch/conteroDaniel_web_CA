@@ -42,11 +42,11 @@ $(document).ready(function(){
             showRoomPhoto(class_name, id, 0);
 
             $("#" + id  + " .prev").click(function() {
-                showRoomPhoto(id, -1);
+                showRoomPhoto(class_name, id, -1);
             });
 
             $("#" + id  + " .next").click(function() {
-                showRoomPhoto(id, 1);
+                showRoomPhoto(class_name, id, 1);
             });
         });
     };
@@ -59,6 +59,7 @@ $(document).ready(function(){
         } else {
             class_name = ".room-container-size-mobile";
         }
+        console.log(class_name)
         carrouselSetUp(class_name);
     };
 

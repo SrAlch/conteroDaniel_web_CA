@@ -1,10 +1,22 @@
-*{margin: 0;}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
+
+*{margin: 0;}
+
+body {
+overflow-x: hidden;
+}
 
 a{
     text-decoration: none;
     color: inherit;
 }
+
+#wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    width:99vw;
+}
+
 @media (min-aspect-ratio: 1/1) {
     /*Tooltip Style*/
 
@@ -16,8 +28,8 @@ a{
         display: none;
         top: 110%;
         left: 2%;
-        width: 100%;
-        height: 100%;
+        width: 20vw;
+        height: 5vh;
     }
 
     #language-button{
@@ -27,7 +39,7 @@ a{
 
     #language-flag{
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
+        font-weight: 200;
         font-size: calc(2px + 0.6vw);
     }
 
@@ -42,8 +54,8 @@ a{
     }
 
     .language-tooltip-button{
-        width: 100%;
-        height: 100%;
+        width: 10vw;
+        height: 2.5vh;
         font-size: 1em;
         background: #2b2b2b;
         color: white;
@@ -56,8 +68,8 @@ a{
         display: none;
         top: 110%;
         left: 2%;
-        width: 100%;
-        height: 60%;
+        width: 15vw;
+        height: 2.5vh;
     }
 
     #email-tooltip-field-box{
@@ -80,7 +92,7 @@ a{
         width: 100%;
         height: 100%;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
+        font-weight: 200;
         font-size: 0.8vw;
         color: rgb(216, 216, 216);
         cursor: default;
@@ -116,22 +128,20 @@ a{
     #phone-tooltip{
         display: none;
         background: rgba(97, 97, 97, 0.596);
-        border-radius: 5px;
-        top: 25%;
-        left: 100%;
-        width: 100%;
-        height: 60%;
-    }
-
-    #phone-tooltip-text{
+        border-radius: 5px;        
+        width: 10vw;
+        min-width: 120px;
+        height: 2.5vh;
+        margin: -2vh 0 0 2vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100%;
+    }
+
+    #phone-tooltip-text{
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        font-size: 0.8vw;
+        font-weight: 200;
+        font-size: calc(6px + 0.6vw);
         color: rgb(216, 216, 216);
         cursor: default;
     }
@@ -148,7 +158,7 @@ a{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100vw;
+        width: 99vw;
         height: 100vh;
         z-index: 2;
     }
@@ -162,6 +172,7 @@ a{
         transform: translate(-50%, -50%);
         border-radius: 15px;
         width: 25vw;
+        min-width: 480px;
         height: 55vh;
         z-index: 2;
     }
@@ -185,7 +196,7 @@ a{
         justify-content: center;
         align-items: center;
         color: #2b2b2b;
-        font-size: 4vh;
+        font-size: 2.5vw;
         cursor: pointer;
     }
 
@@ -203,7 +214,7 @@ a{
         color: #2b2b2b;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 3vw;
+        font-size: 45px;
         cursor: default;
     }
 
@@ -218,7 +229,6 @@ a{
     }
 
     .login-overlay-button-box{
-
         width: 100%;
         height: 10%;
         margin-top: 3.5vh;
@@ -231,16 +241,17 @@ a{
         color: #2b2b2b;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 200;
-        font-size: 0.8vw;
+        font-weight: 400;
+        font-size: 20px;
     }
 
     .login-input{
         width: 15vw;
         height: 3vh;
+        min-width: 300px;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        font-size: 0.8;
+        font-weight: 200;
+        font-size: 15px;
     }
 
     #login-overlay-button{
@@ -251,8 +262,8 @@ a{
         background: #2b2b2b;
         color: white;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        font-size: 1.4vw;
+        font-weight: 200;
+        font-size: 20px;
         cursor: pointer;
     }
 
@@ -273,9 +284,7 @@ a{
         border-radius: 10px;
         justify-content: center;
         align-items: center;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        font-size: 0.8vw;
+        
     }
 
     #login-close-unregistered{
@@ -301,16 +310,10 @@ a{
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
-        font-size: 0.6vw;
+        font-size: 15px;
     }
 
     /*Page Style*/
-
-    #wrapper{
-        margin-left:auto;
-        margin-right:auto;
-        width:100%;
-    }
 
     img{
         max-width: 100%;
@@ -322,7 +325,7 @@ a{
         border-bottom-color: #2b2b2b;
         border-width: 2px;
         border-bottom-style: solid;
-        width: 100%;
+        width: 99vw;
         height: 5vh;
         min-height:30px;
     }
@@ -450,7 +453,7 @@ a{
     }
 
     #login-box{
-        background: chartreuse;
+        margin-right: 2vw;
     }
 
     #login-button{
@@ -463,7 +466,7 @@ a{
         border:none;
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
+        font-weight: 200;
         font-size: calc(10px + 0.5vw);
     }
 
@@ -509,7 +512,7 @@ a{
         justify-content: center;
         align-items: center;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
+        font-weight: 400;
         font-size: calc(10px + 0.5vw);
     }
 
@@ -519,15 +522,16 @@ a{
         height: 100%;
     }
 
-    #date-of-arrival{
+    #date-of-arrival, #date-of-departure{
         display: block;
         margin: 0 auto;
         margin-top: 5%;
         width: 60%;
+        min-width: 120px;
         cursor: text;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        font-size: 0.7vw;
+        font-weight: 200;
+        font-size: calc(4px + 0.6vw);
     }
 
     input::-webkit-calendar-picker-indicator {
@@ -538,17 +542,6 @@ a{
         float: left;
         width: 50%;
         height: 100%;
-    }
-
-    #date-of-departure{
-        display: block;
-        margin: 0 auto;
-        margin-top: 5%;
-        width: 60%;
-        cursor: text;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        font-size: 0.7vw;
     }
 
     #guest-count-box{
@@ -602,7 +595,7 @@ a{
         align-items: center;
         margin-top: 30%;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
+        font-weight: 200;
         font-size: calc(8px + 0.5vw);
     }
 
@@ -641,7 +634,7 @@ a{
         float: left;
         background: url("../images/home-galgway-background.jpg") no-repeat center fixed;
         background-size: cover;
-        width: 100%;
+        width: 99vw;
         height: 80vh;
         min-height:30px;
     }
@@ -649,14 +642,14 @@ a{
     #introduction-general{
         float: left;
         background: white;
-        width: 100%;
+        width: 99vw;
         height: 100vh;
         min-height:30px;
     }
 
     #introduction-title{
-        width: 100%;
-        height: 35%;
+        width: 99vw;
+        height: 35vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -666,28 +659,39 @@ a{
         cursor: default;
     }
 
+    .introduction-body{
+        background: lawngreen;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     #introduction-text-box{
-        float: left;
         background: inherit;
-        width: 50%;
-        height: 65%;
-        margin-top: 6vh ;
+        background: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 49vw;
+        height: 50vh;
     }
 
     .introduction-text-format{
-        margin: 5vh 0 0 4vw;
+        margin: 0 2vw 0 4vw;
         text-align: justify;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        font-size: 1vw;
+        font-weight: 200;
+        font-size: calc(8px + 0.5vw);
         cursor: default;
     }
 
     #introduction-image-box{
-        background: inherit;
-        float: left;
-        width: 50%;
-        height: 65%;
+        background: blue;
+        width: 49vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
     }
 
     #introduction-image{
@@ -696,8 +700,6 @@ a{
         width: 90%;
         height: 90%;
         margin: 0 auto;
-        margin-top: 3.5vh;
-        position: relative;
     }
 
     #introduction-image img{
@@ -707,8 +709,9 @@ a{
     #awards-general{
         float: left;
         width: 99vw;
-        height: 70vh;
+        height: 60vh;
         min-height:30px;
+        margin-top: 6vh;
     }
 
     #awards-title{
@@ -733,7 +736,7 @@ a{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        height: 60vh;
+        height: 50vh;
         width: 99vw;
     }
 
@@ -754,7 +757,6 @@ a{
     }
 
     .awards-seals{
-        background: red;
         width: 30vw;
         height: 30vh;
         display: flex;
@@ -767,10 +769,16 @@ a{
     #footer-general{
         float: left;
         background: #2b2b2b;
-        width: 100%;
+        width: 99vw;
         height: 12vh;
         min-height:30px;
         text-align: center;
+    }
+
+    #copy-and-terms{
+        width: 99vw;
+        height: 2vh;
+        background: inherit;
     }
 
     #copy-and-terms small, a{

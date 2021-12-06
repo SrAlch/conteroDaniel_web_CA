@@ -72,6 +72,8 @@ $(document).ready(function(){
         }
     });
 
+    $("#phone-tooltip").hide();
+
     $("#phone-button").hover(
         function() {
             $("#phone-tooltip").stop(true,true).delay(500).show(0);

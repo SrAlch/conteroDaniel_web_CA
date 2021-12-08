@@ -59,7 +59,6 @@ $(document).ready(function(){
         } else {
             class_name = ".room-container-size-mobile";
         }
-        console.log(class_name)
         carrouselSetUp(class_name);
     };
 

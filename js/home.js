@@ -92,7 +92,7 @@ $(document).ready(function(){
             let departure = $("#date-of-departure").val();
             let count_adult= $().val;
             let count_child= $().val;
-            let new_url = "/content/roomSearch.html";
+            let new_url = "../content/underConstruction.html";
             new_url += "?arrival=" + arrival;
             new_url += "&departure=" + departure;
             new_url += "&adult=" + count_adult;
